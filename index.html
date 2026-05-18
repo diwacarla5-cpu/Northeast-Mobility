@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Northeast Mobility</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <header>
+
+    <div class="hero">
+
+      <h1>Northeast Mobility</h1>
+
+      <p>Mobility & Accessibility Essentials</p>
+
+      <a href="#products" class="btn">
+        Explore Products
+      </a>
+
+    </div>
+
+  </header>
+
+  <!-- ABOUT -->
+  <section>
+
+    <h2>About Our Store</h2>
+
+    <p class="about">
+      Northeast Mobility provides accessibility tools and mobility accessories
+      designed to support comfort, independence, and everyday living
+      for persons with disabilities and seniors.
+    </p>
+
+  </section>
+
+  <!-- PRODUCTS -->
+  <section id="products">
+
+    <h2>Featured Products</h2>
+
+    <div class="menu">
+
+      <!-- CARD 1 -->
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=800&q=80">
+
+        <div class="card-content">
+
+          <h3>Wheelchair</h3>
+
+          <p>Comfortable and durable wheelchair for daily use.</p>
+
+          <span class="price">₱8,999</span>
+
+          <div class="buttons">
+
+            <button onclick="buyNow('Wheelchair')">
+              Buy Now
+            </button>
+
+            <button class="cart-btn" onclick="addCart('Wheelchair')">
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=80">
+
+        <div class="card-content">
+
+          <h3>Walking Cane</h3>
+
+          <p>Lightweight support cane with adjustable height.</p>
+
+          <span class="price">₱799</span>
+
+          <div class="buttons">
+
+            <button onclick="buyNow('Walking Cane')">
+              Buy Now
+            </button>
+
+            <button class="cart-btn" onclick="addCart('Walking Cane')">
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80">
+
+        <div class="card-content">
+
+          <h3>Hearing Aid</h3>
+
+          <p>Modern hearing support device with clear sound.</p>
+
+          <span class="price">₱4,599</span>
+
+          <div class="buttons">
+
+            <button onclick="buyNow('Hearing Aid')">
+              Buy Now
+            </button>
+
+            <button class="cart-btn" onclick="addCart('Hearing Aid')">
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <!-- CARD 4 -->
+      <div class="card">
+
+        <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=800&q=80">
+
+        <div class="card-content">
+
+          <h3>Mobility Walker</h3>
+
+          <p>Foldable walker designed for safe mobility.</p>
+
+          <span class="price">₱2,999</span>
+
+          <div class="buttons">
+
+            <button onclick="buyNow('Mobility Walker')">
+              Buy Now
+            </button>
+
+            <button class="cart-btn" onclick="addCart('Mobility Walker')">
+              Add to Cart
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- LOGIN -->
+  <section class="login-section">
+
+    <h2>Create Account</h2>
+
+    <form class="login-form">
+
+      <input type="text" placeholder="Full Name" required>
+
+      <input type="email" placeholder="Email Address" required>
+
+      <input type="password" placeholder="Password" required>
+
+      <input type="password" placeholder="Confirm Password" required>
+
+      <button type="submit" class="signup-btn">
+        Sign Up
+      </button>
+
+    </form>
+
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+
+    <p>© 2026 Northeast Mobility | Accessibility • Comfort • Independence</p>
+
+  </footer>
+
+  <!-- JAVASCRIPT -->
+  <script>
+
+    function buyNow(product){
+
+      alert("You selected: " + product);
+
+    }
+
+    function addCart(product){
+
+      alert(product + " added to cart!");
+
+    }
+
+  </script>
+
+</body>
+</html>
