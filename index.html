@@ -18,7 +18,7 @@
 
       <h1>Northeast Mobility</h1>
 
-      <p>Mobility & Accessibility Essentials</p>
+      <p>Accessibility • Comfort • Independence</p>
 
       <a href="#products" class="btn">
         Explore Products
@@ -34,9 +34,9 @@
     <h2>About Our Store</h2>
 
     <p class="about">
-      Northeast Mobility provides accessibility tools and mobility accessories
-      designed to support comfort, independence, and everyday living
-      for persons with disabilities and seniors.
+      Northeast Mobility provides mobility accessories and accessibility essentials
+      designed to support comfort, safety, and independence for people with disabilities
+      and seniors.
     </p>
 
   </section>
@@ -48,16 +48,16 @@
 
     <div class="menu">
 
-      <!-- CARD 1 -->
+      <!-- WHEELCHAIR -->
       <div class="card">
 
-        <img src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=800&q=80">
+        <img src="https://images.unsplash.com/photo-1606166325683-e6deb697d301?auto=format&fit=crop&w=800&q=80">
 
         <div class="card-content">
 
           <h3>Wheelchair</h3>
 
-          <p>Comfortable and durable wheelchair for daily use.</p>
+          <p>Comfortable wheelchair designed for daily mobility support.</p>
 
           <span class="price">₱8,999</span>
 
@@ -77,16 +77,16 @@
 
       </div>
 
-      <!-- CARD 2 -->
+      <!-- CANE -->
       <div class="card">
 
-        <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?auto=format&fit=crop&w=800&q=80">
+        <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80">
 
         <div class="card-content">
 
           <h3>Walking Cane</h3>
 
-          <p>Lightweight support cane with adjustable height.</p>
+          <p>Lightweight walking cane with adjustable height support.</p>
 
           <span class="price">₱799</span>
 
@@ -106,16 +106,16 @@
 
       </div>
 
-      <!-- CARD 3 -->
+      <!-- HEARING AID -->
       <div class="card">
 
-        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=800&q=80">
+        <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?auto=format&fit=crop&w=800&q=80">
 
         <div class="card-content">
 
           <h3>Hearing Aid</h3>
 
-          <p>Modern hearing support device with clear sound.</p>
+          <p>Modern hearing support device with clear audio quality.</p>
 
           <span class="price">₱4,599</span>
 
@@ -135,16 +135,16 @@
 
       </div>
 
-      <!-- CARD 4 -->
+      <!-- WALKER -->
       <div class="card">
 
-        <img src="https://images.unsplash.com/photo-1512678080530-7760d81faba6?auto=format&fit=crop&w=800&q=80">
+        <img src="https://images.unsplash.com/photo-1576765608535-5f04d1e3f289?auto=format&fit=crop&w=800&q=80">
 
         <div class="card-content">
 
           <h3>Mobility Walker</h3>
 
-          <p>Foldable walker designed for safe mobility.</p>
+          <p>Foldable mobility walker for safer and easier movement.</p>
 
           <span class="price">₱2,999</span>
 
@@ -168,7 +168,7 @@
 
   </section>
 
-  <!-- LOGIN -->
+  <!-- SIGN UP -->
   <section class="login-section">
 
     <h2>Create Account</h2>
@@ -194,7 +194,7 @@
   <!-- FOOTER -->
   <footer>
 
-    <p>© 2026 Northeast Mobility | Accessibility • Comfort • Independence</p>
+    <p>© 2026 Northeast Mobility</p>
 
   </footer>
 
@@ -203,7 +203,13 @@
 
     function buyNow(product){
 
-      alert("You selected: " + product);
+      let confirmBuy = confirm("Do you want to buy " + product + "?");
+
+      if(confirmBuy){
+
+        alert("Thank you for purchasing " + product + "!");
+
+      }
 
     }
 
